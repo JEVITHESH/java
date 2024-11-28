@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Reading inputs
+        int myInt = scanner.nextInt();
+        double myDouble = scanner.nextDouble();
+        scanner.nextLine(); // Consuming the leftover newline character
+        String myString = scanner.nextLine();
+        
+        // Closing the scanner
+        scanner.close();
+        
+        // Printing outputs
+        System.out.println("String: " + myString);
+        System.out.println("Double: " + myDouble);
+        System.out.println("Int: " + myInt);
+    }
+}
